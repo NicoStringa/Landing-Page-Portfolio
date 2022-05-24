@@ -51,3 +51,45 @@ h1 {
     color: var(--cultured);
 }
 
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    gap: 5rem;
+}
+
+.blume {
+    width: 500px;
+    height: auto;
+}
+
+.hero__text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.hero__text h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--rich-black);
+}
+
+.hero__text p {
+    max-width: 400px;
+    color: var(--rich-black);
+    font-style: italic;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.about p {
+    max-width: 75vw;
+    color: var(--rich-black);
+    font-size: larger;
+}
