@@ -4,42 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Blume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <div>
-            <img src="./img/logo.png" alt="logo" class="logo">
-        </div>
-        <h1><strong>ctOS</strong></h1>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Servicios</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Clientes</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="#">
+                        <img src="./img/logo1.png" alt="logo" class="logo">
+                    </a>
+                </li>
+                <div class="container-items">
+                    <li class="nav-item"><a href="#" class="nav-link">Servicios</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Clientes</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+                </div>
+                <div class="btn-container">
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                </div>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <div class="hero__text">
+        <section class="about-section" id="about">
+            <div class="about-content">
                 <h1>Blume</h1>
                 <p>"El principal innovador del mundo en tecnología de seguridad y comunicaciones de alto rendimiento y alta tecnología"</p>
+                <a href="#servicios" class="btn-service">Contratar</a>
             </div>
-            <div class="hero__img">
-                <img src="./img/hero.png" alt="Logo" class="blume">
+            <div class="about-img">
+                <img src="./img/blume.png" alt="blume">
             </div>
         </section>
-        <section class="hero">
-            <div class="about">
+        <section class="blume">
+            <div class="about-text">
                 <p>
                     Blume Corporation es una empresa de tecnología que se especializa en tecnologías de la comunicación, tecnologías de la información y tecnologías de seguridad. Es la empresa que desarrolló y posee CTOS, así como sus iteraciones, y es responsable de su operación, mantenimiento y avance.
                 </p>
             </div>
         </section>
+        <section class="description-section" id="descption">
+            <h2>Por qué confiar en Blume?</h2>
+            <p>Razones por la cuales deberias ser un integrante más de la familia CTOS.</p>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./img/system.png" alt="system" class="img-card">
+                    <p>CTOS es un sistema de información digital altamente avanzado que está conectado a través de una interconexión muy compleja de sistemas electrónicos..</p>
+                </div>
+                <div class="card">
+                    <img src="./img/computer.png" alt="computer" class="img-card">
+                    <p>Estos sistemas electrónicos incluyen servidores informáticos, sensores, dispositivos tecnológicos y bases de datos.</p>
+                </div>
+                <div class="card">
+                    <img src="./img/server.png" alt="server" class="img-card">
+                    <p>Toda la información recopilada por CTOS se almacena en los centros de control (servidores de datos).</p>
+                </div>
+            </div>
+        </section>
+        <section class="products-section" id="products">
+            <h2>Elige el servicio que más te convenga</h2>
+            <div class="products-container">
+                <div class="product">
+                    <img src="./img/Basic.png" alt="Basico" class="img-buy">
+                    <h3>Basico</h3>
+                    <p>Ofrece el servicio basico enfocado en sus sistemas electrónicos</p>
+                    <a href="#basico" class="btn-product">Comprar</a>
+                </div>
+                <div class="product">
+                    <img src="./img/Mid.png" alt="Casa" class="img-buy">
+                    <h3>Hogar</h3>
+                    <p>Ofrece el servicio del hogar, cubriendo este en su totalidad.</p>
+                    <a href="#hogar" class="btn-product">Comprar</a>
+                </div>
+                <div class="product">
+                    <img src="./img/pro.png" alt="Pro" class="img-buy">
+                    <h3>Profesional</h3>
+                    <p>Ofrece el servicio profesional, cobertura total de su empresa</p>
+                    <a href="#pro" class="btn-product">Comprar</a>
+                </div>
+                <div class="product">
+                    <img src="./img/special.png" alt="Casa" class="img-buy">
+                    <h3>Especial</h3>
+                    <p>Ofrece el servicio especial, solo disponible para unidades gubernamentales.</p>
+                    <a href="#especial" class="btn-product">Comprar</a>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <!-- Para completar la proxima -->
+    </footer>
 </body>
 </html>

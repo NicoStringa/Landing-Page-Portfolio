@@ -1,95 +1,307 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;900&display=swap');
 
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
+    /* border: 1px solid red; */
 }
 
 :root {
     --rich-black: #040f16;
     --cultured: #F6F4F3;
     --lavander: #F8E5EE;
-    --glaucous: #647AA3;    
+    --glaucous: #647AA3;
+    --dodger: #4392F1;
+    --bold: 900;
+    --medium: 700;
+    --regular: 400;
+    --thin: 300;
 }
 
 body {
-    background: var(--lavander);
+    width: 100vw;
+    max-width: 100%;
+    font-family: 'Raleway', sans-serif;
 }
 
-.header {
-    background: var(--rich-black);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px;
-    padding: 0 20px;
+a {
+    text-decoration: none;
 }
 
-.logo {
-    height: 60px;
-}
-
-h1 {
-    color: var(--cultured);
-}
-
-.nav-list {
-    display: flex;
-    gap: 40px;
+li {
     list-style: none;
 }
 
-.nav-link {
-    color: var(--cultured);
-}
-
-.nav-link:hover {
-    text-decoration: underline;
-    color: var(--cultured);
-}
-
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
-    gap: 5rem;
-}
-
-.blume {
-    width: 500px;
+* img {
+    width: 100%;
     height: auto;
 }
 
-.hero__text {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+header {
+    background-color: var(--rich-black);
+    padding: 3rem 1rem 3rem 1rem;
 }
 
-.hero__text h1 {
-    font-weight: 600;
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu i {
     font-size: 2rem;
-    color: var(--rich-black);
+    color: var(--cultured);
+    padding-right: 1rem;
 }
 
-.hero__text p {
-    max-width: 400px;
-    color: var(--rich-black);
-    font-style: italic;
+.container-items{
+    width: 100%;
+    order: 1;
 }
 
-.about {
+.nav-item {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    display: none; 
+}
+
+.logo {
+    width: 200px;
+}
+
+/* Primera Seccion */
+
+.about-section {
+    background-color: var(--lavander);
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    justify-content: center;
+    align-items: center;
 }
 
-.about p {
-    max-width: 75vw;
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: var(--medium);
+    margin: 1rem;
+}
+
+.about-content p {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: var(--thin);
+    margin: 1rem 0 4rem 0;
+    width: 100%;
+}
+
+.btn-service {
+    background-color: var(--glaucous);
+    color: var(--cultured);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+.btn-service:hover {
+    background: var(--dodger);
+}
+
+.about-img {
+    width: 75%;
+    margin: 5rem auto;
+}
+
+.blume {
+    background-color: var(--lavander);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text p {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    font-weight: var(--regular);
+    margin: 1rem 0 4rem 0;
+}
+
+/* Segunda Seccion: Cards */
+
+.description-section {
+    padding: 8rem 0;
+    background-color: var(--glaucous);
+}
+
+.description-section h2 {
+    color: var(--lavander);
+    font-size: 3rem;
+    text-align: center;
+    font-weight: var(--medium);
+    text-transform: uppercase;
+}
+
+.description-section p {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--cultured);
+    max-width: 300px;
+    margin: 2rem auto 5rem;
+}
+
+.img-card {
+    width: 35%;
+    margin-bottom: 2rem;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Tercera Seccion: Productos */
+
+.products-section {
+    padding: 8rem 0;
+    background-color: var(--cultured);
+}
+
+.products-section h2 {
+    text-align: center;
+    font-size: 3rem;
     color: var(--rich-black);
-    font-size: larger;
+}
+
+.products-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.product img{
+    max-width: 200px;
+}
+
+
+.product {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 600px;
+    border-radius: 2rem;
+    box-shadow: 0 0 20px 5px var(--rich-black);
+}
+
+.product h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-weight: var(--bold);
+    color: var(--rich-black);
+}
+
+.product p {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--rich-black);
+    max-width: 300px;
+    margin: 2rem auto 5rem;
+}
+
+.btn-product {
+    background-color: var(--glaucous);
+    color: var(--cultured);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+}
+
+.btn-product:hover {
+    background: var(--dodger);
+}
+
+/* Media to Desktop */
+
+@media (min-width: 1024px) {
+
+    .menu {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    .container-items {
+        display: flex;
+        justify-content: flex-end;
+        gap: 3rem;
+    }
+    .container-items a {
+        color: var(--cultured);
+    }
+    .nav-item {
+        display: flex;
+        font-weight: var(--medium);
+    }
+    .nav-link:hover {
+        text-decoration: underline;
+        color: var(--cultured);
+    }
+    .btn-container {
+        display: none;
+    }
+    .about-section {
+        flex-direction: row;
+    }
+    .about-content {
+        justify-content: flex-start;
+        max-width: 75%;
+    }
+    .about-content p {
+        max-width: 75%;
+    }
+    .about-img {
+        max-width: 500px;
+        margin: 0;
+    }
+    .about-text p {
+        max-width: 100%;
+        padding: 5rem 1rem;
+    }
+    /* Seccion 2 */
+
+    .card-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        margin: 0 2rem;
+    }
+    .description-section p{
+        max-width: 900px;
+    }
+    /* Seccion 3 */
+    .products-container {
+        flex-direction: row;
+        margin: 0 2rem;
+        gap: 2rem;
+    }
 }
