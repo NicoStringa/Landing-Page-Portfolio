@@ -262,10 +262,10 @@ h1 {
         display: flex;
         font-weight: var(--medium);
     }
-    .nav-link:hover {
+    /* .nav-link:hover {
         text-decoration: underline;
         color: var(--cultured);
-    }
+    } */
     .btn-container {
         display: none;
     }
@@ -303,5 +303,27 @@ h1 {
         flex-direction: row;
         margin: 0 2rem;
         gap: 2rem;
+    }
+
+    .nav-item {
+        position: relative;
+    }
+
+    .menu .item-link::after {
+        content: "";
+        height: 3px;
+        width: 100%;
+        background: var(--cultured);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.20s ease;
+    }
+
+    .menu .item-link:hover::after{
+        transform-origin: bottom left;
+        transform: scaleX(1);
     }
 }
